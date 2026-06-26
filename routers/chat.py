@@ -2,8 +2,8 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import List
 
-from backend.services.rag import rag_chat
-
+# from backend.services.rag import rag_chat
+from services.rag import rag_chat
 router = APIRouter()
 
 

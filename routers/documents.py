@@ -3,14 +3,15 @@ from pydantic import BaseModel
 from typing import List
 # from services.ingest import ingest_file, ingest_url, ingest_text
 # from services.vectordb import list_documents, delete_document, get_stats, clear_all
-from backend.services.ingest import ingest_file, ingest_url, ingest_text
-from backend.services.vectordb import (
-    list_documents,
-    delete_document,
-    get_stats,
-)
+# from backend.services.ingest import ingest_file, ingest_url, ingest_text
+# from backend.services.vectordb import (
+#     list_documents,
+#     delete_document,
+#     get_stats,
+# )
 router = APIRouter()
-
+from services.ingest import ingest_file, ingest_url, ingest_text
+from services.vectordb import list_documents, delete_document, get_stats
 
 class URLRequest(BaseModel):
     url: str

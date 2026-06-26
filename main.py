@@ -10,7 +10,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
-from backend.routers import documents, chat, health
+# from backend.routers import documents, chat, health
+from routers import documents, chat, health
 
 app = FastAPI(
     title="Knowledge RAG API",
