@@ -4,7 +4,7 @@ from typing import List, Dict, Any
 from fastapi import HTTPException
 from openai import OpenAI
 
-# from backend.services.vectordb import search
+from services.vectordb import search
 from services.vectordb import add_chunks
 MODEL = "gpt-4o-mini"
 
