@@ -10,7 +10,8 @@ import pandas as pd
 import fitz  # PyMuPDF
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any
-from services.vectordb import add_chunks
+# from services.vectordb import add_chunks
+from backend.services.vectordb import add_chunks
 
 
 # ── Chunking ──────────────────────────────────────────────
